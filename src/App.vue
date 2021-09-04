@@ -51,6 +51,7 @@ html {
 }
 body {
   font-family: "monserrat", sans-serif;
+  overflow-y: hidden;
 }
 main {
   display: flex;
