@@ -40,8 +40,8 @@ export default {
 
 <style>
 *,
-*::before,
-*::after {
+* ::after,
+* ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -51,7 +51,7 @@ html {
 }
 body {
   font-family: "monserrat", sans-serif;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 main {
   display: flex;
