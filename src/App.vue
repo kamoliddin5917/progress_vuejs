@@ -11,8 +11,8 @@
           <a href="#">Portfolio</a>
         </nav>
       </div>
-      <ProgressBar />
-      <Post />
+      <ProgressBar :progress="progress" />
+      <Post @progressUpdate="setProgress" />
     </main>
   </div>
 </template>
@@ -26,6 +26,14 @@ export default {
   components: {
     Post,
     ProgressBar,
+  },
+  data() {
+    return { progress: 0 };
+  },
+  methods: {
+    setProgress(progress) {
+      this.progress = progress;
+    },
   },
 };
 </script>
